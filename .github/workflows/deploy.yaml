@@ -23,4 +23,4 @@ jobs:
 
       - name: Restart Odoo (optional)
         run: |
-          sudo systemctl status odoo.service
+          sudo systemctl restart odoo.service
