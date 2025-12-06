@@ -13,13 +13,13 @@ jobs:
       - name: Clean the directory
         run: |
           echo "Cleaning /data/odoo-app-stg ..."
-          rm -rf /data/odoo-app-stg/*
-          rm -rf /data/odoo-app-stg/.* 2>/dev/null || true
+          rm -rf /data/odoo-alsogour-stg/*
+          rm -rf /data/odoo-alsogour-stg/.* 2>/dev/null || true
 
       - name: Pull latest code from GitHub
         run: |
           echo "Pulling latest code..."
-          git clone https://github.com/osamamagar/Alsogour.git /data/odoo-app-stg
+          git clone https://github.com/osamamagar/Alsogour.git /data/odoo-alsogour-stg
 
       - name: Restart Odoo (optional)
         run: |
